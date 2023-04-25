@@ -3,7 +3,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+nav .active{
+    border: 1px red solid;
+    border-radius: 20px;
+}
 #contacto{
     background-image: url(../images/fondo-contacto.png);
     background-size: cover;
@@ -30,7 +33,7 @@ p{
 }
 .btn-rojo{
     color: white;
-    background-color: #ff4a49;
+    background-color: #E20000;
     border: 0px;
     padding: 10px;
     text-decoration: none;
@@ -42,62 +45,61 @@ p{
 }
 
 .link-rojo{
-    text-decoration: none;
-    color: #ff4a49;
+    text-decoration: underline;
+    color: #E20000;
 }
 #contacto footer, #inicio footer{
     color: white;
+    font-weight: 100;
 }
 #contacto footer a, #inicio footer a{
     color: white;
+    font-weight: 100;
 }   
 #contacto footer .fa-github, #inicio footer .fa-github{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
 #contacto footer .fa-linkedin-in, #inicio footer .fa-linkedin-in{
-    color: #ff4a49;
+    color: #E20000;
     background-color: white;
-    font-size: 20px;
-    border: 0px;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    padding: 8px 0 0 0;
-    border-radius: 80px;
-    margin: 0 8px;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+
 }
 #proyectos footer{
-    color: #ff4a49;
+    color: #E20000;
+    font-weight: 100;
 }
 #proyectos footer a{
     color: #ff4a49;
+    font-weight: 100;
 }   
 #proyectos footer .fa-github{
-    font-size: 30px;
-    color: #ff4a49;
+    font-size: 40px;
+    color: #e20000;
 }
 
 #proyectos footer .fa-linkedin-in{
-    color: #ff4a49;
+    color: #E20000;
     background-color: white;
-    font-size: 20px;
-    border: 0px;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    padding: 8px 0 0 0;
-    border-radius: 80px;
-    margin: 0 8px;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
 }
 .btn-whatsapp{
-    font-size: 70px;
+    font-size: 31px;
     position: fixed;
-    right: 50px;
+    right: 70px;
     bottom: 0px;
     background-color: #370a6d;
     color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .proyecto{
     background-color: white;
@@ -108,7 +110,8 @@ p{
     color: white;
     background: rgb(120,12,12);
     background: linear-gradient(90deg, rgba(120,12,12,1) 0%, rgba(241,0,0,1) 53%);
-    padding: 16px;
+    padding: 8px 16px 8px 16px;
+    
 }
 .proyecto img{
     height:212px;
@@ -119,15 +122,17 @@ p{
     height:130px;
 
 }
+
 #inicio{
     background-image: url(../images/fondo-contacto.png);
     background-size: cover;
+    background-position: bottom;
 }
 #inicio p{
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     border: 1px white solid;
-    border-radius: 15px;
+    border-radius: 20px;
     font-weight: 600;
 }
 #inicio img{
@@ -142,12 +147,71 @@ p{
     border: 0px;
     padding: 10px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .btn-inicio:hover{
     color: white;    
     background-color:#370a6d;
 }
+
+#stack-tecnologico{
+    background: rgb(120,12,12);
+    background: linear-gradient(90deg, rgba(120,12,12,1) 0%, rgba(241,0,0,1) 53%);
+}
+#stack-tecnologico h2{
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+#stack-tecnologico .tecnologia{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    height: 182px;
+    
+}
+#stack-tecnologico .tecnologia i{
+    font-size: 60px;
+}
+#stack-tecnologico .tecnologia h3{
+    font-size: 14px;
+    color: #282828;
+}
+
+#experiencia h2{
+    font-size: 24px;
+    color: #370a6d;
+    font-weight: 400;
+}
+#experiencia h3{
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
+}
+#experiencia h4{
+    color: #370A6D;
+    font-size: 17px;
+}
+#experiencia h5{
+    color: #6A6A6A;
+    font-size: 14px;
+}
+#experiencia p{
+    color: #6a6a6a;
+    font-size: 16px;
+}
+
+#experiencia img{
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#experiencia img:hover{
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
 @media (max-width: 750px){
     #contacto{
         background-image: url(../images/fondo-proyectos.png);
@@ -159,9 +223,9 @@ p{
         background-repeat: no-repeat;
     }
     #inicio p{
-        color: #E20000;
+        color: white;
         font-size: 16px;
-        border: 1px #E20000 solid;
+        border: 1px white solid;
        
     }
 }
