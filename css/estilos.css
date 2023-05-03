@@ -7,19 +7,24 @@ nav .active{
     border: 1px red solid;
     border-radius: 20px;
 }
-#contacto{
+#contacto, #inicio{
     background-image: url(../images/fondo-contacto.png);
     background-size: cover;
+    background-position: bottom;
 }
 #proyectos{
     background-image: url(../images/fondo-proyectos.png);
     background-size: cover;
+    background-position: bottom;
 }
 h1{
     color: #E20000;
 }
 p{
     color: #6a6a6a;
+}
+#descripcion img{
+    border-radius: 50%;
 }
 
 .btn{
@@ -37,7 +42,8 @@ p{
     border: 0px;
     padding: 10px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 20px;
+    text-align: center;
 }
 .btn-rojo:hover{
     color: white;    
@@ -70,20 +76,20 @@ p{
     margin-left: 10px;
 
 }
-#proyectos footer{
+#proyectos footer, #sobre-mi footer{
     color: #E20000;
     font-weight: 100;
 }
-#proyectos footer a{
+#proyectos footer a, #sobre-mi footer a{
     color: #ff4a49;
     font-weight: 100;
 }   
-#proyectos footer .fa-github{
+#proyectos footer .fa-github, #sobre-mi footer .fa-github{
     font-size: 40px;
     color: #e20000;
 }
 
-#proyectos footer .fa-linkedin-in{
+#proyectos footer .fa-linkedin-in, #sobre-mi footer .fa-linkedin-in{
     color: #E20000;
     background-color: white;
     font-size: 30px;
@@ -123,11 +129,7 @@ p{
 
 }
 
-#inicio{
-    background-image: url(../images/fondo-contacto.png);
-    background-size: cover;
-    background-position: bottom;
-}
+
 #inicio p{
     color: white;
     font-size: 17px;
@@ -178,56 +180,73 @@ p{
     color: #282828;
 }
 
-#experiencia h2{
+#experiencia h2, #formacion h2, #cursos h2{
     font-size: 24px;
     color: #370a6d;
     font-weight: 400;
 }
-#experiencia h3{
+#experiencia h3, #formacion h3, #cursos h3{
     color: #6A6A6A;
     font-size: 18px;
     font-weight: 600;
 }
-#experiencia h4{
+#experiencia h4, #formacion h4, #cursos h4{
     color: #370A6D;
     font-size: 17px;
 }
-#experiencia h5{
+#experiencia h5, #formacion h5, #cursos h5{
     color: #6A6A6A;
     font-size: 14px;
 }
-#experiencia p{
+#experiencia p, #formacion p, #cursos p{
     color: #6a6a6a;
     font-size: 16px;
 }
+#idiomas{
+    background-color: #eee;
 
-#experiencia img{
+}
+.carta-idioma, .carta-hobbies{
+    background-color: white;
+    border-radius: 15px;
+}
+#idiomas .carta{
+    background-color: #370A6D;
+    border-radius: 15px;
+    height: 182px;
+    padding: 40px 0;
+}
+
+
+#idiomas i{
+    font-size: 80px;
+    color: white;
+}
+#idiomas h4{
+    font-size: 16px;
+}
+#idiomas p{
+    font-size: 14px;
+}
+
+.gris{
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
-#experiencia img:hover{
+.gris:hover{
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
 
 @media (max-width: 750px){
-    #contacto{
-        background-image: url(../images/fondo-proyectos.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+    
     #proyectos{
-        background-size: contain;
         background-repeat: no-repeat;
     }
-    #inicio p{
-        color: white;
-        font-size: 16px;
-        border: 1px white solid;
-       
-    }
+    
+
 }
 
 
